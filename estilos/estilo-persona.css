@@ -53,26 +53,10 @@ body {
     opacity: 1;
     z-index: 10;
 }
-
-.container .box .circle {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    transition: 0.5s;
-    background-color: #ffffff;
-    transform: translate3d(-50%, -50%, 50px);
-    z-index: 10;
-}
-
-.container .box:nth-child(1) .circle,
 .container .box:nth-child(1) .resumo {
     background-color: #379bf7;
 }
 
-.container .box:nth-child(2) .circle,
 .container .box:nth-child(2) .resumo {
     background-color: #9bdc28;
 }
@@ -81,9 +65,9 @@ body {
     position: absolute;
     top: 80px;
     left: 50%;
-    max-height: 100px;
+    max-width: 100px;
     transition: 0.5s;
-    transform: translate3d(-50%, -50%, 100px);
+    transform: translate3d(-50%, -50%, 50px);
     z-index: 11;
 }
 
@@ -104,8 +88,8 @@ body {
     gap: 32px;
 
     grid: 
-        'personaCircle' 200px
-        'personaName' 36px
+        'personaFoto' 200px
+        'personaName' 48px
         'personaResumo' 260px
         'divisao' 2px
         'personaText' 1fr
@@ -137,23 +121,10 @@ body {
     border-radius: 20px;
 }
 
-#popup #personaDetalhado #personaCircle {
-    grid-area: personaCircle;
-
-    justify-self: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 200px;
-    height: 200px;
-    background-color: #ffffff;
-    border-radius: 50%;
-}
-
 #popup #personaDetalhado #personaFoto {
-    
+    grid-area: personaFoto;
+    justify-self: center;
+    width: 200px;
     height: 200px;
 }
 
@@ -233,53 +204,45 @@ body {
         opacity: 1;
     }
 
-    .container .box .circle {
+    .container .box .foto {
         position: absolute;
         top: 50%;
-        width: 200px;
-        height: 200px;
-        transform-style: preserve-3d;
-    }
-
-    .container .box:hover .circle {
-        top: 80px;
-        width: 100px;
-        height: 100px;
-    }
-
-    .container .box .foto {
-        top: 50%;
-        max-height: 200px;
-        transform-style: preserve-3d;
-        transform: translate3d(-50%, -50%, 50px);
+        left: 50%;
+        max-width: 200px;
+        z-index: 11;
     }
 
     .container .box:hover .foto {
         top: 80px;
         max-height: 100px;
-        transform: translate3d(-50%, -50%, 100px);
     }
 
     #popup #personaDetalhado {
         grid: 
+            'personaFoto  divisao personaText' 200px
+            'personaName    divisao personaText' 48px
             'personaResumo  divisao personaText' 1fr
-            'personaName    divisao personaText' 36px
-            'personaCircle  divisao personaText' 200px
             /200px          2px     1fr
         ;
 
         margin: 32px auto 16px;
         padding: 32px 32px 0;
-        width: 768px;
+        max-width: 800px;
         background: #131313;
         border-radius: 20px;
     }
 
     #popup #personaDetalhado #personaName {
         width: 200px;
+        height: 48px;
+        align-self: flex-end;
     }
 
     #popup #personaDetalhado #personaText {
         border-radius: 20px;
+    }
+
+    #popup #personaDetalhado #personaResumo {
+        height: 260px;
     }
 }
