@@ -23,6 +23,12 @@ function closedPersona() {
 	document.getElementById('body').style.overflowY = 'auto'
 
 	document.getElementById('foto1').style.transform = 'translate3d(-50%, -50%, 50px)'
+	document.getElementById('resumo1').style.transform = 'translate3d(-50%, 0, 50px)'
+	document.getElementById('name1').style.transform = 'translate3d(0, 0, 50px)'
+
+	document.getElementById('foto2').style.transform = 'translate3d(-50%, -50%, 50px)'
+	document.getElementById('resumo2').style.transform = 'translate3d(-50%, 0, 50px)'
+	document.getElementById('name2').style.transform = 'translate3d(0, 0, 50px)'
 }
 
 function openPersona(persona) {
@@ -32,6 +38,12 @@ function openPersona(persona) {
 	document.getElementById('body').style.overflowY = 'hidden'
 
 	document.getElementById('foto1').style.transform = 'translate3d(-50%, -50%, 0)'
+	document.getElementById('resumo1').style.transform = 'translate3d(-50%, 0, 0)'
+	document.getElementById('name1').style.transform = 'translate3d(0, 0, 0)'
+
+	document.getElementById('foto2').style.transform = 'translate3d(-50%, -50%, 0)'
+	document.getElementById('resumo2').style.transform = 'translate3d(-50%, 0, 0)'
+	document.getElementById('name2').style.transform = 'translate3d(0, 0, 0)'
 
 	document.getElementById('personaFoto').src = foto
 

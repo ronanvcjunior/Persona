@@ -4,6 +4,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #131313;
+    font-family: "Segoe UI";
 }
 
 
@@ -53,6 +54,7 @@ body {
     opacity: 1;
     z-index: 10;
 }
+
 .container .box:nth-child(1) .resumo {
     background-color: #379bf7;
 }
@@ -90,7 +92,7 @@ body {
     grid: 
         'personaFoto'   200px
         'personaName'   48px
-        'personaResumo' 260px
+        'personaResumo' 273.683px
         'divisao'       2px
         'personaText'   1fr
         /1fr
@@ -243,7 +245,7 @@ body {
     }
 
     #popup #personaDetalhado #personaResumo {
-        height: 260px;
+        height: 273.683px;
     }
 }
  
