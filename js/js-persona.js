@@ -28,6 +28,8 @@ function openPersona(persona) {
 	
 	document.getElementById('popup').style.display = 'block'
 	document.getElementById('body').style.overflowY = 'hidden'
+
+
 	document.getElementById('personaFoto').src = foto
 
 	if (persona === 'ricardo') {
@@ -51,6 +53,6 @@ function openPersona(persona) {
 		document.getElementById('cidade').innerHTML = 'Sanclerlândia de Goiás'
 		document.getElementById('cursa').innerHTML = 'Design Gráfico na UFG'
 
-		document.getElementById('paragrafo1').innerHTML = 'Nicole começa seu dia trabalhando, à tarde faz faculdade, logo após faz uma caminhada ou vai para academia e termina o dia assistindo um filme. A estudante gosta de ouvir funk, sertanejo e pop, em seu tempo livre gosta de assistir filmes de terror e beber uma cerveja. Suas redes sociais mais usadas são o Pinterest e Instagram, onde busca referências de design e compartilha seus trabalhos, além disso, usa muito o WhatsApp para se comunicar. Busca informações principalmente em livros e redes sociais, como facebook e instagram, através de referências que conheceu na faculdade.' + '<br>' + 'Nicole é uma pessoa ansiosa, alegre e engraçada. Faz serviço voluntário em uma Empresa Júnior (EJ), onde é gerente de projetos. Apesar de não estabelecer planos para o futuro, planeja terminar o curso e ter um bom serviço, ser uma pessoa mais confiante, organizada e independente financeiramente, também quer constituir uma família. Seus maiores medos são de não conseguir terminar a faculdade no tempo certo e não ser feliz na sua profissão. Nicole nunca acessou sites de delegação de estágio, mas vê com bons olhos começar a utilizá-los, desde que tenha um sistema de busca eficaz, que organize os estágios por áreas de atuação, e que seja um site esteticamente agradável e seguro.'
+		document.getElementById('paragrafo1').innerHTML = 'Nicole começa seu dia trabalhando, à tarde faz faculdade, logo após faz uma caminhada ou vai para academia e termina o dia assistindo um filme. A estudante gosta de ouvir funk, sertanejo e pop, em seu tempo livre gosta de assistir filmes de terror e beber uma cerveja. Suas redes sociais mais usadas são o Pinterest e Instagram, onde busca referências de design e compartilha seus trabalhos, além disso, usa muito o WhatsApp para se comunicar. Busca informações principalmente em livros, redes sociais, como facebook, instagram e através de referências que conheceu na faculdade.' + '<br>' + 'Nicole é uma pessoa ansiosa, alegre e engraçada. Faz serviço voluntário em uma Empresa Júnior (EJ), onde é gerente de projetos. Apesar de não estabelecer planos para o futuro, quer terminar o curso e ter um bom serviço, ser uma pessoa mais confiante, organizada e independente financeiramente, também quer constituir uma família. Seus maiores medos são de não conseguir terminar a faculdade no tempo certo e não ser feliz na sua profissão. Nicole nunca acessou sites de delegação de estágio, mas vê com bons olhos começar a utilizá-los, desde que tenha um sistema de busca eficaz, que organize os estágios por áreas de atuação, e que seja um site esteticamente agradável e seguro.'
 	}
 }
