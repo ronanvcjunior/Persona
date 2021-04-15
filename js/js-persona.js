@@ -21,6 +21,8 @@ larguraTela()
 function closedPersona() {
 	document.getElementById('popup').style.display = 'none'
 	document.getElementById('body').style.overflowY = 'auto'
+
+	document.getElementById('foto1').style.transform = 'translate3d(-50%, -50%, 50px)'
 }
 
 function openPersona(persona) {
@@ -29,6 +31,7 @@ function openPersona(persona) {
 	document.getElementById('popup').style.display = 'block'
 	document.getElementById('body').style.overflowY = 'hidden'
 
+	document.getElementById('foto1').style.transform = 'translate3d(-50%, -50%, 0)'
 
 	document.getElementById('personaFoto').src = foto
 
